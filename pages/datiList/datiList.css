@@ -1,0 +1,223 @@
+.bghomeP{
+	width:750rpx;
+	position:absolute;
+	bottom: 0rpx;
+	left: 0rpx;
+	height:80%;
+	background-image: url(/static/denglubg.png);
+	background-size: 100% 100%;
+	padding:0rpx 50rpx;
+}
+.bghomeP11{
+	width:750rpx;
+	height: 100%;
+}
+.bottomimgP{
+	width: 100%;
+	position:fixed;
+	bottom: 0rpx;
+	left: 0rpx;
+}
+.loginimgP{
+	width:671rpx;
+	height:80%;
+	background-image: url(/static/videostuty.png);
+	background-size: 100% 100%;
+}
+
+.alertviewP{
+	width: 525rpx;
+	height: 347rpx;
+	background: #FFFFFF;
+	border-radius: 22rpx 22rpx 22rpx 22rpx;
+	opacity: 1;
+	padding:67rpx 55rpx;
+}
+.quedingbtnP{
+	width: 205rpx;
+	height: 65rpx;
+	background: #0053FD;
+	border-radius:  15rpx;
+	opacity: 1;
+	text-align: center;
+	line-height:65rpx;
+	text-align: center;
+	color: white;
+	}
+.dajweisa{
+	width: 326rpx;
+	margin-left:172rpx;
+	height: 350rpx;
+}
+.menu1{
+	width:223rpx;
+	height: 182rpx;
+	background-color:rgba(255, 255, 255, 0.5) ;
+	background-size:100% 100%;
+	border-radius: 10rpx;z-index: 1000000;
+}
+.iconimg{
+	width: 92rpx;
+	height: 92rpx;
+}
+.scrollview{
+	width: 670rpx;
+	height: 90%;
+}
+.videoviewitejm{
+	width: 543rpx;
+	height: 110rpx;
+	background: rgba(0,83,253,0.4);
+	border-radius: 23rpx 23rpx 23rpx 23rpx;
+	opacity: 1;
+	border: 2rpx solid #0053FD;
+	margin-bottom:20rpx;
+}
+.videoname{
+	width: 430rpx;
+	color: white;
+}
+
+/* 答题 */
+.datitypetxtP{
+	width: 108rpx;
+	height: 44rpx;
+	font-size: 36rpx;
+	font-family: Inter-Regular, Inter;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 42rpx;
+	margin-bottom:20rpx;
+}
+.dativiewbig{
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius:20rpx;
+}
+.selimgviewP1{
+		background-color: #0053FD;
+		border-top-left-radius:20rpx;
+		border-top-right-radius:20rpx;
+}
+.selimgviewPlast{
+		background-color: #0053FD;
+		border-bottom-left-radius:20rpx;
+		border-bottom-right-radius:20rpx;
+}
+.selimgviewPlastPutong{
+		background-color: #0053FD;
+}
+.zhnegquebians{
+	width: 124rpx;
+	height: 41rpx;
+	background: rgba(14,180,0,0.7);
+	border-radius: 6rpx 6rpx 6rpx 6rpx;
+	opacity: 1;
+	font-size: 25rpx;
+	text-align: center;
+	line-height: 41rpx;
+	margin-left:20rpx;
+}
+
+.liluntivkuP{
+	height: 59rpx;
+	font-size: 45rpx;
+	font-family: Inter-Bold, Inter;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 59rpx;
+}
+.zailianyibia{
+	width: 328rpx;
+	height: 68rpx;
+	background: #0053FD;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	text-align: center;
+	line-height: 68rpx;
+}
+.manfen{
+	font-size:30rpx;
+	font-weight: bold;
+}
+.resultview234{
+	width: 689rpx;
+	background: rgba(255,255,255,0.5);
+	border-radius: 3
+	0rpx;
+	opacity: 1;
+	border: 2rpx solid #ffffff;
+	padding:0rpx 20rpx;
+	position: relative;
+}
+.lancoP{
+	color: #0053FD;
+}
+.yijinghuidatioP{
+	height: 126rpx;
+	font-size: 48rpx;
+	font-family: Inter-Regular, Inter;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 63rpx;
+	letter-spacing: 6px;
+	text-align: center;
+}
+.jixubtn{
+	width: 483rpx;
+	height: 88rpx;
+	background: #0053FD;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	text-align: center;
+	line-height: 88rpx;
+	color: #FFFFFF;
+}
+
+.jishiveiw{
+	min-width: 235rpx;
+	height: 76rpx;
+	background: #0053FD;
+	border-radius: 50rpx 0rpx 0rpx 50rpx;
+	opacity: 1;
+	
+	right:0rpx;
+	top:459rpx;
+	z-index:5000000;
+	text-align: center;
+	line-height:76rpx;color:white;
+	
+}
+.fensashP{
+	font-size: 40rpx;
+	color: red;
+	position:absolute;
+	right: 20rpx;
+	top: -20rpx;
+	z-index:54045;
+	transform:rotate(25deg);
+}
+
+.dengluview{
+	width: 298rpx;
+	height: 88rpx;
+	background: #0053FD;
+	text-align: center;
+	line-height:88rpx;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	color: white;
+	margin-top:90rpx;
+	z-index:1000;
+}
+.dengluview11{
+	width: 298rpx;
+	height: 88rpx;
+	background: #0053FD;
+	text-align: center;
+	line-height:88rpx;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	margin-top: 20px;
+	color: white;
+	z-index:1000;
+}

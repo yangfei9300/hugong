@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "上海市级医疗机构护工护理员职业在线学习"
+			}
+		}
+	    ,{
+            "path" : "pages/menus/menus",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/videoList/videoList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频学习",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/datiList/datiList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "答题",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/datiList1/datiList1",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "成绩展示",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/showVideo/showVideo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/datiList1/datiList1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/viewoInfo/viewoInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "上海市级医疗机构护工护理员职业在线学习",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"uniIdRouter": {}
+}

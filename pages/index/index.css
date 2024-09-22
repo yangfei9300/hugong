@@ -1,0 +1,57 @@
+.bghomeP{
+	width:750rpx;
+	position:absolute;
+	bottom: 0rpx;
+	left: 0rpx;
+	height:80%;
+	background-image: url(/static/denglubg.png);
+	background-size: 100% 100%;
+}
+.bghomeP11{
+	width:750rpx;
+	height: 100%;
+}
+.bottomimgP{
+	width: 100%;
+	position:fixed;
+	bottom: 0rpx;
+	left: 0rpx;
+}
+.loginimgP{
+	width:671rpx;
+	height:80%;
+	background-image: url(/static/loginbg.png);
+	background-size: 100% 100%;
+}
+.dengluview{
+	width: 298rpx;
+	height: 88rpx;
+	background: #0053FD;
+	text-align: center;
+	line-height:88rpx;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	color: white;
+	margin-left:168rpx;
+	margin-top:90rpx;
+	z-index:1000;
+}
+.alertviewP{
+	width: 525rpx;
+	height: 347rpx;
+	background: #FFFFFF;
+	border-radius: 22rpx 22rpx 22rpx 22rpx;
+	opacity: 1;
+	padding:67rpx 55rpx;
+}
+.quedingbtnP{
+	width: 295rpx;
+	height: 65rpx;
+	background: #0053FD;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	text-align: center;
+	line-height:65rpx;
+	text-align: center;
+	color: white;
+	}

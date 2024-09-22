@@ -1,0 +1,102 @@
+.bghomeP{
+	width:750rpx;
+	position:absolute;
+	bottom: 0rpx;
+	left: 0rpx;
+	min-height:80%;
+	background-image: url(/static/denglubg.png);
+	background-size: 100% 100%;
+}
+.bghomeP11{
+	width:750rpx;
+	height: 100%;
+}
+.bottomimgP{
+	width: 100%;
+	position:fixed;
+	bottom: 0rpx;
+	left: 0rpx;
+}
+.loginimgP{
+	width:671rpx;
+	height:80%;
+	background-image: url(/static/videostuty.png);
+	background-size: 100% 100%;
+}
+.dengluview{
+	width: 298rpx;
+	height: 88rpx;
+	background: #0053FD;
+	text-align: center;
+	line-height:88rpx;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	color: white;
+	margin-left:168rpx;
+	margin-top:90rpx;
+	z-index:1000;
+}
+.alertviewP{
+	width: 525rpx;
+	height: 347rpx;
+	background: #FFFFFF;
+	border-radius: 22rpx 22rpx 22rpx 22rpx;
+	opacity: 1;
+	padding:67rpx 55rpx;
+}
+.quedingbtnP{
+	width: 295rpx;
+	height: 65rpx;
+	background: #0053FD;
+	border-radius: 50rpx 50rpx 50rpx 50rpx;
+	opacity: 1;
+	text-align: center;
+	line-height:65rpx;
+	text-align: center;
+	color: white;
+	}
+.dajweisa{
+	width: 326rpx;
+	margin-left:172rpx;
+	height: 350rpx;
+}
+.menu1{
+	width:223rpx;
+	height: 182rpx;
+	background-color:rgba(255, 255, 255, 0.5) ;
+	background-size:100% 100%;
+	border-radius: 10rpx;z-index: 1000000;
+}
+.iconimg{
+	width: 92rpx;
+	height: 92rpx;
+}
+.scrollview{
+	width: 650rpx;
+	height: 90%;
+}
+.videoviewitejm{
+	width: 543rpx;
+	height: 110rpx;
+	background: rgba(0,83,253,0.4);
+	border-radius: 23rpx 23rpx 23rpx 23rpx;
+	opacity: 1;
+	border: 2rpx solid #0053FD;
+	margin-bottom:20rpx;
+	margin-left: 50rpx;
+}
+.videoname{
+	width: 430rpx;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+   
