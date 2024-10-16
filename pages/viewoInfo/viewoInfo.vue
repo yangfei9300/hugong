@@ -2,6 +2,7 @@
 	<view class="colonn">
 		<image mode="widthFix" src="/static/zhucetop.png" style="width: 750rpx;"></image>
 		<view class="bghomeP colonn center_center">
+			<image style="width: 350px;height: 68px; margin-top:-20px; margin-bottom: 70px;" src="/static/gogsimi.png"></image>
 			<view  class="viewbigview colonn center_center">
 				<view style="color:white;font-weight: bold;">{{src.name}}</view>
 				<view style="height: 30rpx;"></view>

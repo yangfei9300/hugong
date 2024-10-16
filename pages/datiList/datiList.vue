@@ -9,8 +9,8 @@
 		<view class="bghomeP">
 
 
-			<view style="height: 10%;"></view>
-			<view class="scrollview colonn" style="overflow-y: scroll; width: 382px; height: 80%;" scroll-y>
+			<view style="height: 85px;"></view>
+			<view class="scrollview colonn" style="overflow-y: scroll; width: 382px; height: 620px;"  scroll-y>
 
 				<view class="colonn center_center w-661">
 
@@ -36,8 +36,7 @@
 									<view>提交时间</view>
 									<view class="lancoP">{{re_exerciseResult.create_at}}</view>
 								</view>
-								<view class="fensashP">{{re_exerciseResult.fen}}<span style="font-size:25rpx;">分</span>
-								</view>
+								<view class="fensashP">{{re_exerciseResult.fen}}<span style="font-size:25rpx;">分</span></view>
 							</view>
 							<view class="h-75"></view>
 						</block>
@@ -68,8 +67,8 @@
 								<view class="h-20"></view>
 								<view class="w-650 dativiewbig">
 									<block v-for="(item2,index2) in item1.options">
-
-
+										
+										
 										<view class="roww center_center" style="min-height: 78rpx;padding:20rpx 0rpx;"
 											@click.stop="selTimuClick(index,index1,index2)" :class="{
 									'selimgviewP1':item2.isSel&&index2==0,
@@ -85,8 +84,8 @@
 											<view class="w-10"></view>
 											<view class="allline"></view>
 										</view>
-
-
+										
+										
 									</block>
 								</view>
 								<view class="roww endend w-650">
@@ -97,16 +96,14 @@
 							</block>
 						</block>
 
-						<!-- <view class="roww center_center w-650">
+						<view class="roww center_center w-650">
 							<view class="dengluview" @click="toSubmit">提交</view>
-						</view> -->
+						</view>
 						<view style="height: 30rpx;"></view>
-
+	
 
 
 					</view>
-
-
 					<view v-if="tyep==2" class="colonn center_center">
 						<view class="h-50"></view>
 						<view class="yijinghuidatioP">
@@ -121,10 +118,6 @@
 
 
 				</view>
-			</view>
-
-			<view class="roww center_center w-650">
-				<view class="dengluview11" @click="toSubmit">提交</view>
 			</view>
 		</view>
 		<!-- <image mode="widthFix" style="pointer-events: none" src="/static/sucai3.png" class="bottomimgP"></image> -->
@@ -156,8 +149,8 @@
 				time: 0,
 				timeShow: ['00', '00', '00'],
 				iswanCheng: false,
-				re_exerciseResult: {},
-				weizuodaCVOunt: 0
+				re_exerciseResult:{},
+				weizuodaCVOunt:0
 			}
 		},
 		onLoad() {
@@ -167,72 +160,72 @@
 		},
 
 		methods: {
-			toShare() {
+			toShare(){
 				console.error("分享");
-				var url = window.location.href
-				let os = ""
-				var xinxi = uni.getSystemInfoSync();
-				console.log()
-
-				var link = "";
-				link = window.location.href.split('#')[0];
-
-				var data = {
-					params: {
-						exhType: "2",
-						url: link
+				var url=window.location.href
+							let os = ""
+						    var xinxi=uni.getSystemInfoSync();
+							console.log()
+							
+						    var link = "";
+							link = window.location.href.split('#')[0];
+				
+				var data={  
+					params:{
+						exhType:"2",
+						url:link
 					}
 				}
-				var url = "https://shandongtibohui.zsyflive.com/miniapp/wx/ticket"
+				var url="https://shandongtibohui.zsyflive.com/miniapp/wx/ticket"
 				uni.request({
-					url: url,
-					method: "post",
-					data: data,
+					url:url,
+					method:"post",
+					data:data,
 					success: (res) => {
-						console.log("--", res);
-						var data1 = res.data;
-
-						var exType = uni.getStorageSync("exType")
-						console.log("this.util", this.util)
-						this.util.jwxModule(
+						console.log("--",res);
+						var data1=res.data;
+						
+						var exType=uni.getStorageSync("exType")
+						console.log("this.util",this.util)
+							this.util.jwxModule(
 							data1,
 							"this.$tools.gettitle()",
 							"this.$tools.gettitle()",
 							window.location.href,
 							"https://shandongtibohui.zsyflive.com/profile/upload/2022/08/03/16b9760cd7064e6aa756604b7202d396_20220803092628A006.png"
-						)
-
+							)
+						
 					}
 				})
-
+				
 			},
 			// 获取还有多少道题没作答完成
-			getZuodaNum() {
-				var timeHistory = uni.getStorageSync("timeHistory")
-				var time = uni.getStorageSync("time")
-				if (timeHistory) {
-					this.alertShow = true;
-				} else {
-					this.gettiList();
-					return
+			getZuodaNum(){
+				var timeHistory=uni.getStorageSync("timeHistory")
+				var time=uni.getStorageSync("time")
+				if(timeHistory){
+					this.alertShow=true;
+				}else{
+						this.gettiList();
+						return
 				}
-				var count = 0;
-				for (var a = 0; a < timeHistory.length; a++) {
-					for (var b = 0; b < timeHistory[a].list.length; b++) {
-						if (!timeHistory[a].list[b].isShowAnswer) {
-							count = count + 1;
+				var count=0;
+				for(var a=0;a<timeHistory.length;a++){
+					for(var b=0;b<timeHistory[a].list.length;b++){
+						if(!timeHistory[a].list[b].isShowAnswer){
+							count=count+1;
 						}
 					}
 				}
-				this.weizuodaCVOunt = count;
-
-				this.timuSlist = timeHistory;
-
-				if (time) {
-					this.time = time;
+				this.weizuodaCVOunt=count;
+				
+				this.timuSlist=timeHistory;
+				
+				if(time){
+					this.time=time;
 				}
-
-
+					
+				
 				return count;
 			},
 			//提交答题内容
@@ -276,14 +269,14 @@
 									trueAnswer: list[a].list[b].answer
 								}
 								data.list.singles.push(obg2);
-							} else if (list[a].type == '多选') {
-								var obg3 = {
-									id: list[a].list[b].id,
-									myAnswer: xuanzxiangList,
-									trueAnswer: list[a].list[b].answer
-								}
-								data.list.multiples.push(obg3);
-							}
+							 } else if (list[a].type == '多选') {
+							 	var obg3 = {
+							 		id: list[a].list[b].id,
+							 		myAnswer: xuanzxiangList,
+							 		trueAnswer: list[a].list[b].answer
+							 	}
+							 	data.list.multiples.push(obg3);
+							 }
 						}
 
 
@@ -299,13 +292,13 @@
 							this.$tools.showToast("提交成功");
 							uni.removeStorageSync("timeHistory")
 							uni.removeStorageSync("time")
-
+							
 							// this.getDatiHistory();
-							setTimeout(res => {
+							setTimeout(res=>{
 								uni.redirectTo({
-									url: "/pages/datiList1/datiList1"
+									url:"/pages/datiList1/datiList1"
 								})
-							}, 1000)
+							},1000)
 						} else {
 							this.$tools.showToast(res.info);
 						}
@@ -347,7 +340,7 @@
 				this.$tools.showToast("请先作答")
 			},
 			selTimuClick(index, index1, index2) {
-				uni.setStorageSync("time", this.time)
+				uni.setStorageSync("time",this.time)
 				if (this.timuSlist[index].list[index1].isShowAnswer) {
 					return false;
 				}
@@ -361,8 +354,8 @@
 				console.log('2222', );
 				this.timuSlist[index].list[index1].options[index2].isSel = !this.timuSlist[index].list[index1].options[
 					index2].isSel;
-
-				uni.setStorageSync("timeHistory", this.timuSlist)
+					
+					uni.setStorageSync("timeHistory",this.timuSlist)
 			},
 			gettiList() {
 				// 
@@ -428,13 +421,13 @@
 					});
 			},
 			alertShowClicl(type) {
-				if (type == 1) {
+				if(type==1){
 					this.alertShow = !this.alertShow;
-				} else if (type == 2) {
+				}else if(type==2){
 					this.alertShow = !this.alertShow;
 					this.gettiList()
 				}
-
+				
 			}
 		}
 	}
@@ -442,42 +435,36 @@
 
 <style>
 	@import url(datiList.css);
-
 	/* 这个主要的必须要设置的 */
 	::-webkit-scrollbar {
-		background: none;
+	    background:none;
 		/* 这个值是必须设置的,否则颜色除了scrollbar-corner都是无效的 */
 		/* background-color:blue; */
 		/* 这样写也是可以的 */
 	}
-
 	/* 内部滚动条 */
 	::-webkit-scrollbar-thumb {
-		/* background-color: red; */
+	    /* background-color: red; */
 		background: #F5A100;
 	}
-
 	/* 两边-边上的-块 */
 	::-webkit-scrollbar-button {
-		/* background-color: red; */
+	    /* background-color: red; */
 		background: rgba(0, 0, 0, 0);
 	}
-
 	/* 滚动条没滚到的地方的-块 */
 	::-webkit-scrollbar-track-piece {
-		/* background-color: yellow; */
+	    /* background-color: yellow; */
 		background: rgba(0, 0, 0, 0);
 	}
-
 	/* 垂直与水平滚动条交汇点的颜色 */
 	/* 不依赖scrollbar就可以自己设置颜色的特殊存在 */
 	::-webkit-scrollbar-corner {
 		background: rgba(0, 0, 0, 0);
 	}
-
 	/* .......无知 */
 	::-webkit-resizer {
-		/* background-color: orange; */
+	    /* background-color: orange; */
 		background: rgba(0, 0, 0, 0);
 	}
 </style>

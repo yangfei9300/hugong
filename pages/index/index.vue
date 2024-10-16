@@ -4,9 +4,9 @@
 		<view class="bghomeP">
 			<view class="colonn center_center" style="height: 95%;">
 				<view style="height:10%;"></view>
-				<image style="width: 350px;height: 68px; margin-top:50px;" src="/static/gogsimi.png"></image>
+				<image style="width: 350px;height: 68px; margin-top:10px; margin-bottom: 20px;" src="/static/gogsimi.png"></image>
 				<view style="height: 1%;"></view>
-				<view class="loginimgP colonn " style="width: 350px;height: 462px; margin-top:50px;">    
+				<view class="loginimgP colonn " style="width: 350px;height: 462px; display: block;">    
 					<view class="h-240"></view>
 					<view class="roww center_center w-550 m-left-60" style="width:90%; margin: 0 auto; border-bottom:1px solid #1351de;">
 						<image style="width: 40rpx;height: 40rpx; margin-right:20px" src="/static/Component 206@2x.png"></image>

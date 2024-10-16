@@ -1,31 +1,25 @@
 <template>
 	<view class="colonn">
 		<image mode="widthFix" src="/static/zhucetop.png" style="width: 750rpx;"></image>
-		<view class="bghomeP colonn center_center">
-			<view class="colonn center_center" 
-			 style=" height: 80%;
-    position: fixed;
-    bottom: 0px;">
-				<view style="height:10%;"></view>
-				<image style="width: 350px;height: 68px; margin-top: 60px;" 
-				src="/static/gogsimi.png"></image>
+		<view class="bghomeP colonn center_center" style="height: 730px;">
+			<view class="colonn center_center"  style=" height: 80%; bottom: 0px;">
+				<image style="width: 350px;height: 68px; margin-top: 0px;" src="/static/gogsimi.png"></image>
 				<view style="height: 20px;"></view>
-				<view class="loginimgP colonn "style="width: 350px;height: 530px; margin-top: 30px; margin: 0 auto;">  
+				<view class="loginimgP colonn "style="width: 350px;height: 470px; margin-top: 30px; margin: 0 auto;">  
 					<view class="h-100;" style="height: 77px"></view>
-					<view class="scrollview colonn" style="overflow-y: scroll; width: 370px; height: 430px;" scroll-y >
+					<view class="scrollview colonn" style="overflow-y: scroll; width: 370px; height: 370px;" scroll-y >
 						<view class="colonn center_center w-600;" style="margin-right: 42px;" >
 							<view class="h-60;" style="height: 12px"></view>
 							<view class="videoviewitejm roww center_center"
 							@click.stop="toShowVideo(item)"
 							v-for="(item,index) in videoList">
 								<image style="width: 56rpx;height: 56rpx;margin-right:20rpx;" src="/static/videoimg.png"></image>
-								<view class="videoname txtShowLength">{{item.name}}?</view>
+								<view class="videoname txtShowLength">{{item.name}}</view>
 							</view>
 							<view style="height: 50rpx;"></view>
 						</view>
 					</view>
 				</view>
-
 			</view>
 		</view>
 		<!-- <image mode="widthFix" style="pointer-events: none;" src="/static/sucai3.png" class="bottomimgP"></image> -->

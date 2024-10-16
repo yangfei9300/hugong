@@ -528,7 +528,7 @@ util.jwxModule = function(options,title,desc,link,imgUrl){
 	jweixin.ready(function () {   //需在用户可能点击分享按钮前就先调用
 	
 	// var link="https://gtyq.imjiayi.com"D:/project/vue/项目1/unpackage/dist/build/h5
-	var imgUrl="https://gtyq.imjiayi.com/c87620f6ab76ba3bae06b395bddc808.png";
+	var imgUrl="https://tzfsdfk.mianshijing.top/8ef118f180105a8c7952b09fb090f73.png";
 	var title="上海市级医疗机构护工护理员职业技能竞赛"  
 		// var desc="时间：11月10日                     地址：无锡太湖华邑酒店";
 		var desc="在线学习";

@@ -1,39 +1,29 @@
 <template>
 	<view class="colonn">
-		<image mode="widthFix" 
-		src="/static/zhucetop.png" style="width: 750rpx;"></image>
-		<view class="bghomeP">
-			<view class="colonn center_center" 
-			>
-			<!-- style="min-height: 100%;" -->
-				<view style="height:50px;"></view>
-				<image style="width: 350px;height: 68px; margin-top:50px;" 
-				src="/static/gogsimi.png"></image>
-				<view style="height: 20px;"></view>
-				<view class="loginimgP colonn ">
+		<image mode="widthFix" src="/static/zhucetop.png" style="width: 750rpx;"></image>
+		<view class="bghomeP" style="height: 700px;">
+			<view class="colonn center_center">
+				<view style="height:10%;"></view>
+				<image style="width: 350px;height: 68px; margin-top: 80px; margin-bottom: 20px;" src="/static/gogsimi.png"></image>
+				<view style="height: 1%;"></view>
+				<view class="loginimgP colonn">
 					<view class="h-100"></view>
-					<image style="width: 342px; height: 380px; margin:0 auto; margin-top: -25px;"
-					 class="dajweisa" 
-					 src="/static/zhidaodanwei.png"></image>
+					<image style="width: 342px; height: 360px; margin:0 auto; margin-top: -25px;" class="dajweisa" src="/static/zhidaodanwei.png"></image>
 					<view class="h-30"></view>
-					<view class="roww rowsa" >
+					<view class="roww rowsa" style="height: 80px;">
 						<view></view>
-						<view class="menu1 center_center colonn" @click.stop="toviewosP">
-							<image class="iconimg" src="/static/Component 201@2x.png"></image>
+						<view class="menu1 center_center colonn" style="width: 100px; height: 70px;margin-top: -10px;" @click.stop="toviewosP">
+							<image class="iconimg" src="/static/Component 201@2x.png" style="width: 30px;height: 30px;"></image>
 							<view style="color: #0053FD;">视频学习</view>
 						</view>
-						<view class="menu1 center_center colonn" @click="tovieXuexi">
-							<image class="iconimg" src="/static/Component 200@2x.png"></image>
+						<view class="menu1 center_center colonn" style="width: 100px; height: 70px;margin-top: -10px;" @click="tovieXuexi">
+							<image class="iconimg" src="/static/Component 200@2x.png"style="width: 30px;height: 30px;"></image>
 							<view style="color: #0053FD;">理论学习</view>
 						</view>
 							<view></view>
 					</view>
-					<view class="h-40"></view>
 				</view>
-				
-					<view class="h-40"></view>
 			</view>
-			<!-- <view class="h-150"></view> -->
 		</view>
 		<!-- <image mode="widthFix" src="/static/bottomimg.png" class="bottomimgP"></image> -->
 
@@ -128,6 +118,7 @@ this.toShare();
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		
 	}
 
 	.logo {

@@ -10,8 +10,8 @@
 
 
 
-			<view style="height: 10%;"></view>
-			<scroll-view class="scrollview colonn" style="width: 370px; height: 80%;"scroll-y>
+			<view style="height: 83px;"></view>
+			<scroll-view class="scrollview colonn" style="width: 370px; height: 630px;"scroll-y>
 
 				<view class="colonn center_center w-661">
 
